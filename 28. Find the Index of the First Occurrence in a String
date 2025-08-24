@@ -1,0 +1,34 @@
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int h = haystack.length();
+        int n = needle.length();
+        for(int i=0; i<= h-n;i++)
+        {
+            if(haystack.substring(i, n+i).equals(needle))
+            {
+                return i;
+            }
+        }
+      return -1;
+
+//only one test case run................
+    //     int n = needle.length();
+    //     int og = needle.length();
+    //     int j=0;
+    //     for(int i=0; i<haystack.length();i++)
+    //     {
+    //    while(n != 0)
+    //         {
+    //             if(haystack.charAt(i) == needle.charAt(j))
+    //             {
+    //                 j++;
+    //                 n--;
+    //             }
+    //             i++;
+    //         }
+    //         if(og == j) return i-j;
+    //     }
+    //     return -1;
+
+    }
+}
