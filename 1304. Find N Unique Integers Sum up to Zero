@@ -1,0 +1,18 @@
+class Solution {
+    public int[] sumZero(int n) {
+        int[] output = new int[n];
+        int idx = 0;
+        if(n%2 == 1)
+        {
+            output[idx++] = 0;
+        }
+
+        for(int i=1; i<=n/2; i++)
+        {
+            output[idx++]=i;
+            output[idx++]=-i;
+        }
+
+        return output;
+    }
+}
